@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AppGerenciamento</string>
+    <string name="txt_edit_adicionar_um_titulo">Adicionar um titulo</string>
+    <string name="txt_edit_adicionar_observa_o">Adicionar observação</string>
+    <string name="txt_titulo">TAREFAS</string>
+    <string name="txt_button_excluir">Excluir</string>
+    <string name="txt_button_editar">Editar</string>
+    <string name="txt_button_criar">+ Criar</string>
+    <string name="txt_subtitulo_observacoes">Observações</string>
+    <string name="txt_subtitulo_titulo">Titulo</string>
+    <string name="txt_tarefa_concluida">Tarefa concluída</string>
+    <string name="txt_edit_insira_uma_data">Insira uma data</string>
+    <string name="txt_edit_data_de_vencimento">Data de vencimento</string>
+    <string name="text_view_concluido">TextView</string>
+    <string name="concluiu">Concluiu?</string>
+</resources>
