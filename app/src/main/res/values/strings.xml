@@ -13,4 +13,6 @@
     <string name="txt_edit_data_de_vencimento">Data de vencimento</string>
     <string name="text_view_concluido">TextView</string>
     <string name="concluiu">Concluiu?</string>
+    <string name="txt_categoria">Categoria:</string>
+    <string name="txt_gerenciamento_de_tarefas">Gerenciamento de tarefas</string>
 </resources>

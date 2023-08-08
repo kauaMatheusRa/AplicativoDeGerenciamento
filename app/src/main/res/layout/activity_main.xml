@@ -7,119 +7,126 @@
     android:backgroundTint="#EFECEC"
     tools:context=".view.MainActivity">
 
-    <Button
-        android:id="@+id/button_excluir"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="@string/txt_button_excluir"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_limpar" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button_limpar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="10dp"
-        android:text="@string/txt_button_editar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_salvar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button_salvar"
-        android:layout_width="match_parent"
-        android:layout_height="46dp"
-        android:layout_margin="10dp"
-        android:text="@string/txt_button_criar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/txt_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/txt_gerenciamento_de_tarefas"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextTitulo"
-        android:layout_width="367dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:hint="@string/txt_edit_adicionar_um_titulo"
-        android:inputType="textPersonName"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.217"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/txt_subtitulo_titulo"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/editTextObservacao"
-        android:layout_width="367dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="@string/txt_edit_adicionar_observa_o"
-        android:inputType="textPersonName"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.217"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
+            <EditText
+                android:id="@+id/editTextTitulo"
+                android:layout_width="367dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="@string/txt_edit_adicionar_um_titulo"
+                android:inputType="textPersonName"
+                android:textAlignment="textStart"
+                tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/txt_subtitulo_observacoes"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTitulo"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/txt_subtitulo_observacoes"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:text="@string/txt_subtitulo_titulo"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.026"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_excluir"
-        tools:ignore="MissingConstraints" />
+            <EditText
+                android:id="@+id/editTextObservacao"
+                android:layout_width="367dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="@string/txt_edit_adicionar_observa_o"
+                android:inputType="textPersonName"
+                android:textAlignment="textStart"
+                tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="137dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:hint="@string/txt_edit_insira_uma_data"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.036"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_edit_data_de_vencimento"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/txt_edit_data_de_vencimento"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.035"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextObservacao"
-        tools:ignore="MissingConstraints" />
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="137dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:hint="@string/txt_edit_insira_uma_data"
+                android:inputType="date"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_salvar"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_margin="10dp"
+                android:text="@string/txt_button_criar"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_limpar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:text="@string/txt_button_editar" />
+
+            <Button
+                android:id="@+id/button_excluir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/txt_button_excluir" />
+
+
+
+            <TextView
+                android:id="@+id/text_categoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/txt_categoria"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
